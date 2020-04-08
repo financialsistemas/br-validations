@@ -456,6 +456,19 @@ IErules.MT = [{
 		dvpos: 10,
 		pesos: [3,2,9,8,7,6,5,4,3,2],
 		algorithmSteps: ['onlyNumbers', 'normalSum', 'mod11', 'minusRestOf11']
+	},{
+		dvpos: 9,
+		pesos: [4,3,2,7,6,5,4,3,2],
+		algorithmSteps: ['onlyNumbers', 'normalSum', 'mod11', 'minusRestOf11']
+	}],
+	validate: function(value) { return validateIE(value, this); }
+},{
+	// {mask: new StringMask('00.000.000-0')
+	chars: 9,
+	dvs: [{
+		dvpos: 8,
+		pesos: [9,8,7,6,5,4,3,2],
+		algorithmSteps: ['onlyNumbers', 'normalSum', 'mod11', 'minusRestOf11']
 	}],
 	validate: function(value) { return validateIE(value, this); }
 }];
